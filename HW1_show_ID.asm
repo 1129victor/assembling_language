@@ -18,11 +18,11 @@ main PROC
 	mov al, Digit2	;ax = 0200
 	mov bl, Digit3	;bx = 0202
 	
-	imul ax, 10h	;將ax往左移一格	ax = 2000
+	imul ax, 10h	;ax left shift with one bit	ax = 2000
 	
-	add ax, bx		;ax 加上 bx		ax = 2202	
+	add ax, bx		;ax add bx		ax = 2202	
 	
-	mov MyId, ax	;將ax給MyId		MyId = 2202
+	mov MyId, ax	;assign MyId to ax		MyId = 2202
 	
 	
 	;enter your code here
